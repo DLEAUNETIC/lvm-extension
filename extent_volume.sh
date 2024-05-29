@@ -1,7 +1,9 @@
 #!/bin/bash
 
 EXTEND-DRIVE=/dev/sdb
+EXTEND-DRIVE-PART=1
 EXTEND-DRIVE-PCNT=100
 
 ##code
-parted $EXTEND-DRIVE resize 1 $EXTEND-DRIVE-PCNT%
+echo parted $EXTEND-DRIVE resize $EXTEND-DRIVE-PART $EXTEND-DRIVE-PCNT%
+echo pvresize $EXTEND-DRIVE
