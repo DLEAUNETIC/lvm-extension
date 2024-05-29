@@ -1,3 +1,5 @@
+#!/bin/bash
+
 EXTEND-DRIVE=/dev/sdb
 EXTEND-DRIVE-PCNT=100
 
